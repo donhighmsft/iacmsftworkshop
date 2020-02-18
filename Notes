@@ -1,0 +1,19 @@
+Notes
+
+vagrant plugin install vagrant-hostsupdater
+vagrant plugin list
+
+
+az ad sp create-for-rbac --name="SPForTerraform" --role="Contributor" --scopes="/subscriptions/8921-1444-..."
+
+provider "azurerm" {
+      subscription_id = "<subscription ID>"
+      client_id = "<Client ID>"
+      client_secret = "<Client Secret>"
+      tenant_id = "<Tenant Id>"
+}
+
+export ARM_SUBSCRIPTION_ID=xxxxx-xxxxx-xxxx-xxxxexport ARM_CLIENT_ID=xxxxx-xxxxx-xxxx-xxxxexport ARM_CLIENT_SECRET=xxxxxxxxxxxxxxxxxxexport ARM_TENANT_ID=xxxxx-xxxxx-xxxx-xxxx
+
+
+export ARM_SUBSCRIPTION_ID=<subscription_id>export ARM_CLIENT_ID=<client ID>export ARM_SECRET_SECRET=<client Secret>export ARM_TENANT_ID=<tenant ID>
